@@ -1,5 +1,24 @@
-<div layout="row" layout-padding layout-wrap layout-fill style="padding-bottom: 32px;" ng-cloak>
-    <md-whiteframe class="md-whiteframe-1dp" flex-sm="45" flex-gt-sm="35" flex-gt-md="25" layout layout-align="center center">
-        <span ng-click="">Binding example</span>
-    </md-whiteframe>
+<div>
+    <br/>
+    <md-input-container class="md-default-theme md-icon-float md-block" style="width:70% !important;margin-left: 10% !important;" align="center">
+        <md-icon>search</md-icon>
+        <input class="ng-pristine ng-untouched ng-valid md-input" type="text" name="name" placeholder="Search Topic">
+    </md-input-container>
 </div>
+
+<md-content class="md-padding" layout-xs="column" layout="row">
+    <br/>
+    <div flex-xs flex-gt-xs="25" layout="column">
+        <md-card>
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">AngularJS-Binding</span>
+                    <span class="md-subhead">We can easily bind the values to view.</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-actions layout="row" layout-align="end center">
+                <md-button ng-click="goToBinding();">View</md-button>
+            </md-card-actions>
+        </md-card>
+    </div>
+</md-content>

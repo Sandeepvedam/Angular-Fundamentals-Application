@@ -1,27 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="fundamentalsApp">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>Angular-Fundamentals Demo</title>
 
-    <!--Google Fonts -->
+    <!--Google Fonts and Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Begin vendor CSS files -->
-    <link href="vendors/angular-material/angular-material.css" rel="stylesheet">
+    <link type="text/css" href="vendors/angular-material/angular-material.css" rel="stylesheet">
     <!-- End vendor CSS files -->
 
-    <!-- Begin vendor JS files -->
-    <link href="vendors/angular/angular.min.js" rel="stylesheet">
-    <link href="vendors/angular-material/angular-material.min.js" rel="stylesheet">
-    <!-- End vendor JS files -->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 </head>
-<body ng-app="fundamentalsApp" style="background-color: #C0C0C0">
+    <body>
 
-</body>
+        <div>
+            <h1 style="color:seagreen;" align="center">AngualrJS Fundamentals examples.</h1>
+        </div>
+
+        <!-- Begin vendor JS files -->
+        <script src="vendors/angularjs/angular.min.js"></script>
+        <script src="vendors/angular-route/angular-route.min.js"></script>
+        <script src="vendors/angular-resource/angular-resource.min.js"></script>
+        <script src="vendors/angular-material/angular-material.min.js"></script>
+        <script src="vendors/angular-animate/angular-animate.min.js"></script>
+        <script src="vendors/angular-aria/angular-aria.min.js"></script>
+        <script src="vendors/angular-bootstrap/ui-bootstrap.js"></script>
+        <script src="vendors/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <!-- End vendor JS files -->
+
+        <!-- Begin Application JS files -->
+        <script src="js/app.js"></script>
+        <script src="js/Home/Controller/homeController.js"></script>
+        <!-- End Application JS files -->
+
+        <!-- Begin Component JS files -->
+        <script src="components/Binding/binding.js"></script>
+        <!-- End Component JS files -->
+
+        <!-- Intialize all components js file-->
+        <script src="components/components.module.js"></script>
+        <!-- End components js file-->
+
+        <div ng-view="">
+
+        </div>
+
+    </body>
 </html>
