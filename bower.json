@@ -1,0 +1,32 @@
+{
+  "name": "Angular-Fundamentals",
+  "authors": [
+    "Sandeep Vedam <vedamsandeepkumar@gmail.com>"
+  ],
+  "description": "Angular basic concepts with sample examples",
+  "main": "",
+  "moduleType": [
+    "es6"
+  ],
+  "dependencies" : {
+    "angularjs": "1.5.0",
+    "angular-route" : "1.4.3",
+    "angular-material" : "1.0.8",
+    "angular-bootstrap" : "0.13.3"
+  },
+  "keywords": [
+    "AngularSampleApplication",
+    "AngularStarterApplication",
+    "AngularFundamentals"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
