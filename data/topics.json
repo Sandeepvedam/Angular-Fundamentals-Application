@@ -1,0 +1,9 @@
+{
+  "message" : "AngularJS topics",
+  "topics" : [{
+    "topic" : "AngularJS-Binding",
+    "purpose" : "We can easily bind the values to view."
+  }]
+}
+
+
