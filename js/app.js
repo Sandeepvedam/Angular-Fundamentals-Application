@@ -1,9 +1,18 @@
 
 'use strict';
-var app = angular.module('fundamentalsApp',['ngRoute','ngResource','ngMaterial','homeModule','intializeComponents']);
+var app = angular.module('fundamentalsApp',['ngRoute','ngResource','ngMaterial','startingPageModule','homeModule','intializeComponents']);
 
 app.config(function ($routeProvider) {
     $routeProvider
+        .when('/startPage',{
+            RouteData: {
+                bodyStyle: {
+                    'background-color': '#0153B4'
+                }
+            },
+            controller:'StartingPageController',
+            templateUrl : 'js/StartingPage/Partials/StartingPage.html'
+        })
         .when('/home',{
             controller:'HomeController',
             templateUrl : 'js/Home/Partials/homePage.html'
@@ -12,5 +21,5 @@ app.config(function ($routeProvider) {
             controller:'BindingController',
             templateUrl : 'components/Binding/binding.html'
         })
-        .otherwise({ redirectTo: '/home' });
+        .otherwise({ redirectTo: '/startPage' });
 });

@@ -1,0 +1,49 @@
+.bigDiv {
+    background-image: url("../img/superhero-paper.png");
+    height: 100%;
+    width: 100%;
+    background-color: #0153B4;
+}
+
+.hero.is-large {
+    height: 600px;
+    padding-top: 16px;
+    text-align: center;
+}
+.hero {
+    position: relative;
+    padding: 80px 48px 56px;
+    height: 80px;
+}
+
+.hero .hero-logo:after {
+    content: '';
+    background: url("../img/angular.png") top center no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 200px;
+}
+
+.text-headline {
+    margin: 200px 0 35px 0;
+    font-size: 24px;
+    font-weight: 450;
+    opacity: .87;
+    line-height: 32px;
+}
+
+.background-superhero-paper {
+    background: url("../img/superhero-paper.png") bottom center no-repeat;
+    background-size: 100%;
+    background-position: fixed;
+}
+
+.background-sky {
+    background-color: #0153B4;
+    background: -webkit-linear-gradient(#0143A3,#0273D4);
+    background: linear-gradient(#0143A3,#0273D4);
+    color: #fff;
+}
