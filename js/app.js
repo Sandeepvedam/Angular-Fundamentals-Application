@@ -5,11 +5,6 @@ var app = angular.module('fundamentalsApp',['ngRoute','ngResource','ngMaterial',
 app.config(function ($routeProvider) {
     $routeProvider
         .when('/startPage',{
-            RouteData: {
-                bodyStyle: {
-                    'background-color': '#0153B4'
-                }
-            },
             controller:'StartingPageController',
             templateUrl : 'js/StartingPage/Partials/StartingPage.html'
         })

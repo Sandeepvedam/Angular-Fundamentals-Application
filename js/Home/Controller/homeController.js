@@ -7,4 +7,8 @@ homeController.controller('HomeController',['$rootScope',function($rootScope){
         location.href = '#/binding';
     };
 
+    $rootScope.goToStartPage = function(){
+        location.href = '#/startPage';
+    };
+
 }]);
